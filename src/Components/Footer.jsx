@@ -49,11 +49,11 @@ const Footer = (props) => {
         alignItems: "center",
         gap: "2.5rem",
         padding: "5rem 0 3rem",
-        backgroundColor: primaryColor,
+        backgroundColor: "#1C1C1E",
         width: "100vw"
       }}
     >
-      <div
+      <div className="imgHover"
         style={{
           display: "flex",
           justifyContent: "center",
@@ -62,17 +62,17 @@ const Footer = (props) => {
       >
         {email && (
           <a href={`mailto:${email}`}>
-            <img src={envelopeIcon} alt="email" className="socialIcon" />
+            <img src={envelopeIcon} alt="email" className="socialIcon pop-image" />
           </a>
         )}
         {devDotTo && (
           <a href={`https://dev.to/${devDotTo}`} target="_blank" rel="noopener noreferrer">
-            <img src={devDotToIcon} alt="Dev.to" className="socialIcon" />
+            <img src={devDotToIcon} alt="Dev.to" className="socialIcon pop-image" />
           </a>
         )}
         {gitHub && (
           <a href={`https://github.com/${gitHub}`} target="_blank" rel="noopener noreferrer">
-            <img src={gitHubIcon} alt="GitHub" className="socialIcon" />
+            <img src={gitHubIcon} alt="GitHub" className="socialIcon pop-image" />
           </a>
         )}
         {instagram && (
@@ -81,7 +81,7 @@ const Footer = (props) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={instagramIcon} alt="Instagram" className="socialIcon" />
+            <img src={instagramIcon} alt="Instagram" className="socialIcon pop-image" />
           </a>
         )}
         {linkedIn && (
@@ -90,17 +90,17 @@ const Footer = (props) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={linkedInIcon} alt="LinkedIn" className="socialIcon" />
+            <img src={linkedInIcon} alt="LinkedIn" className="socialIcon pop-image" />
           </a>
         )}
         {medium && (
           <a href={`https://medium.com/@${medium}`} target="_blank" rel="noopener noreferrer">
-            <img src={mediumIcon} alt="Medium" className="socialIcon" />
+            <img src={mediumIcon} alt="Medium" className="socialIcon pop-image" />
           </a>
         )}
         {twitter && (
           <a href={`https://twitter.com/${twitter}`} target="_blank" rel="noopener noreferrer">
-            <img src={twitterIcon} alt="Twitter" className="socialIcon" />
+            <img src={twitterIcon} alt="Twitter" className="socialIcon pop-image" />
           </a>
         )}
         {youTube && (
@@ -109,7 +109,7 @@ const Footer = (props) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={youTubeIcon} alt="YouTube" className="socialIcon" />
+            <img src={youTubeIcon} alt="YouTube" className="socialIcon pop-image" />
           </a>
         )}
       </div>

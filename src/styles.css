@@ -94,19 +94,20 @@ li::marker {
 }
 
 a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
 a:hover {
-  color: #4e567e;
+  color: gold;
+  text-decoration: underline;
 }
 
 .container {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 330px 300px;
-  margin: 20px auto;
+  margin: auto;
 }
 
 .container .box {
@@ -122,4 +123,14 @@ a:hover {
 img.socialIcon {
   height: 30px;
   width: 30px;
+}
+
+.pop-image {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.pop-image:hover {
+  transform: scale(1.1); /* Zoom in effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Add a shadow */
 }
